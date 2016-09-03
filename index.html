@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=1024" />
+		<title>刘望城的导航 </title>
+		<meta name="keywords" content="导航" />
+        <meta name="description" content="其他导航太讨厌啦！" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <base target="_blank"/>
+        <style>
+            body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+        </style>
+    </head>
+
+<body>
+<div id="load" class="" style="width: 100%;height: 100vh;position: fixed;z-index: 9999;background: #0fa483;text-align:center;">
+    <img src="images/123.png" alt="liuwangcheng.com" style="margin-top: 200px;">
+</div>
+<!-- start -->
+<header>
+    <div class="wrapper">
+        <h1>
+            <a class="logo" href="http://123.liuwangcheng.com">刘望城的导航</a>
+        </h1>
+        <div class="weather clearfix">
+            <div class="info fl">
+                <a href="http://www.baidu.com/baidu?tn=baidu&ie=utf-8&word=%E5%A4%A9%E6%B0%94">天气</a>
+            </div>
+        </div>
+         <div class="search">
+            <!-- 百度搜索框 -->
+            <form action="http://www.baidu.com/baidu" target="_blank">
+            <table bgcolor="#F0F0F0">
+                <tr>
+                    <td>
+                        <input name=tn type=hidden value=baidu>
+                        <input name=ie type=hidden value=utf-8>
+                        <span class="sipt">
+                            <input id="kw" type=text name=word size=30 baiduSug=1>
+                        </span>
+                        <button type="submit">搜索</button>
+                    </td>
+                </tr>
+            </table>
+            </form>
+            <!-- 百度搜索框提示 -->
+            <script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script>
+            <script>
+                var fileref = document.createElement('link');
+                fileref.setAttribute("rel","stylesheet");
+                fileref.setAttribute("type","text/css");
+                fileref.setAttribute("href",cssfile);
+                document.getElementsByTagName("head")[0].appendChild(fileref);
+                //loader
+                var loadTimer = setTimeout(function(){
+                    document.getElementById('load').className = 'fadeOutUp animated';
+                    clearTimeout(loadTimer);
+                }, 200);
+            </script>
+        </div>
+    </div>
+</header>
+<section id="hotSites">
+    <div class="wrapper">
+        <ul class="clearfix">
+            <li>
+                <a href="http://weibo.com">
+                    <div class="imgWrapper">
+                        <img src="images/weibo.png" alt="微博">
+                    </div>
+                    <span>微 博</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://douban.fm">
+                    <div class="imgWrapper">
+                        <img src="images/doubanfm.png" alt="豆瓣FM">
+                    </div>
+                    <span>豆瓣FM</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.youku.com">
+                    <div class="imgWrapper">
+                        <img src="images/youku.png" alt="优酷">
+                    </div>
+                    <span>优 酷</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://mail.163.com">
+                    <div class="imgWrapper">
+                        <img src="images/163.png" alt="网易邮箱">
+                    </div>
+                    <span>网易邮箱</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.iqiyi.com/">
+                    <div class="imgWrapper">
+                        <img src="images/iqiyi.png" alt="爱奇艺">
+                    </div>
+                    <span>爱奇艺</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.zhihu.com/">
+                    <div class="imgWrapper">
+                        <img src="images/zhihu.jpg" alt="知乎">
+                    </div>
+                    <span>知乎</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section id="commSites">
+    <div class="wrapper">
+        <!-- line 2.2 -->
+        <ul class="bgc">
+            <b class="ico-video"></b>
+            <li><a href="http://www.5chajian.com/channel/hnwsTV-other.html">看电视</a></li>
+            <li><a href="http://www.jd.com/">京东</a></li>
+            <li><a href="http://www.mp4ba.com/">MP4吧</a></li>
+            <li><a href="http://www.mgtv.com/">芒果TV</a></li>
+            <li><a href="http://115.com/">115云</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://www.taobao.com/">淘宝</a></li>
+            <li><a href="http://www.imooc.com/course/list">慕课网</a></li>
+            <li><a href="http://www.douban.com/" target="_blank">豆瓣</a></li>
+            <li><a href="http://www.jianshu.com">简书</a></li>
+            <li><a href="http://www.mobile-patterns.com/">Mobile Patterns</a></li>
+        </ul>
+        <!-- line 1.2 -->
+        <ul class="bgc">
+            <b class="code1"></b>
+            <li><a href="https://github.com">GITHUB</a></li>
+            <li><a href="http://www.w3cfuns.com/">W3Cfuns</a></li>
+            <li><a href="http://www.cnblogs.com/cate/108703/">博客园</a></li>
+            <li><a href="https://coding.net/user" target="_blank">Coding</a></li>
+            <li><a href="https://gitcafe.com/gallen" target="_blank">Gitcafe</a></li>
+
+            <b class="code2"></b>
+        </ul>
+        <ul>
+            <li><a href="http://ued.taobao.org/" target="_blank">淘宝UED</a></li>
+            <li><a href="http://isux.tencent.com/" target="_blank">腾讯ISUX</a></li>
+            <li><a href="http://uedc.163.com/" target="_blank">网易UEDC</a></li>
+            <li><a href="http://cdc.tencent.com/" target="_blank">腾讯CDC</a></li>
+            <li><a href="http://mux.baidu.com/" target="_blank">百度MUX</a></li>
+            <li><a href="http://uxc.360.cn/" target="_blank">360UXC</a></li>
+        </ul>
+        <!-- line 3.2 -->
+        <ul class="bgc">
+            <b class="feiji"></b>
+            <li><a href="http://www.ctrip.com/">携程</a></li>
+            <li><a href="http://www.woshipm.com/">产品经理</a></li>
+            <li><a href="http://hao.shejidaren.com/">设计导航</a></li>
+            <li><a href="https://dribbble.com">Dribbble</a></li>
+            <li><a href="http://www.awwwards.com/">Awwwards</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://pan.baidu.com/">百度云</a></li>
+            <li><a href="http://www.uisdc.com/">优设</a></li>
+            <li><a href="https://www.digitalocean.com/?refcode=ede28ec3d4aa" target="_blank">DigitalOcean</a></li>
+            <li><a href="http://www.pexels.com/">Pexels</a></li>
+        </ul>
+        <!-- line 4.1 -->
+        <ul class="bgc">
+            <b class="more"></b>
+
+            <li><a href="http://www.hao123.com/">好123</a></li>
+            <li><a href="http://hao.qq.com/">QQ导航</a></li>
+            <li><a href="http://www.2345.com/">2345导航</a></li>
+            <li><a href="http://gate.guokr.com/">任意门</a></li>
+        </ul>
+    </div>
+</section>
+<footer>
+    <p>&copy; from海风 (HINPC.COM) | <a href="https://github.com/GallenHu/Teemo">源码</a></p>
+</footer>
+
+
+<!-- scripts -->
+
+<!-- end -->
+</body>
+</html>

@@ -1,0 +1,380 @@
+/* reset样式 */
+html{color:#000;background:#fff;height:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+body{margin:0;padding:0;font:12px/1.5 tahoma,arial,"Hiragino Sans GB","Microsoft Yahei","\5b8b\4f53";min-width:1000px;}
+ul{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}
+a,a:link,a:hover,a:active{color:#000;}
+a:hover{text-decoration:none;}
+ins,a{text-decoration:none}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+.clearfix{zoom:1}
+/* 结束reset样式 */
+
+
+
+/* common */
+body{
+	padding-bottom: 58px;
+	background: #fff;
+	min-width: 1000px;
+}
+.wrapper{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.none{
+	display: none;
+}
+
+
+/* header */
+header{
+	height: 134px;
+	background: #0fa483;
+
+	h1{
+		display: inline-block;
+		margin: (134px-67px)/2;
+	}
+
+	.logo{
+		display: block;
+		width: 246px;
+		height: 67px;
+		background-image: url(../images/logo_dh.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 80%;
+		text-indent: -9999em;
+	}
+
+	.weather{
+		position: absolute;
+		top: 54px;
+		left: 280px;
+
+		.date{
+			.month,.day{
+				display: block;
+				font-size: 12px;
+				color: #fff;
+			}
+			.month{
+				border-bottom: 1px solid #fff;
+			}
+		}
+		.info{
+			margin-left: 10px;
+			font-size: 15px;
+			color: #fff;
+			height: 37px;
+			line-height: 37px;
+		}
+	}
+
+	.search{
+		position: absolute;
+		top: 38px;
+		left: 50%;
+		width: 400px;
+
+		table{
+			width: 96%;
+			padding: 0 2%;
+			height: 56px;
+			-webkit-box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+		    -moz-box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+		    box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+
+			input{
+				width: 79%;
+				padding-left: 1%;
+				height: 34px;
+				border: 1px solid #ccc;
+				vertical-align: middle;
+				border-radius: 2px;
+				font-size: 16px;
+				color: #333;
+			}
+			button{
+				width: 18%;
+				height: 34px;
+				line-height: 34px;
+				vertical-align: middle;
+				color: #fff;
+				font-size: 16px;
+				cursor: pointer;
+				padding: 0;
+				border: 1px solid #396bc9;
+				background-color: #4d7ed9;
+				border-radius: 2px;
+				cursor: pointer;
+
+				&:hover{
+					background: #6a96e9;
+				}
+			}
+		}
+	}
+}
+
+
+
+/* hot sites */
+#hotSites{
+	ul{
+		width: 100%;
+		padding: 20px 0;
+
+		li{
+			float: left;
+			margin: 0 25px;
+			border: 1px solid #efefef;
+			&:hover{
+				border: 1px solid #0fa483;
+				-webkit-box-shadow: 0 2px 2px rgba(0,0,0,.3);
+			    -moz-box-shadow: 0 2px 2px rgba(0,0,0,.3);
+			    box-shadow: 0 2px 2px rgba(0,0,0,.3);
+			    transition: all 0.5s;
+
+			    span{
+			    	color: #333;
+			    }
+			}
+
+			a{
+				.imgWrapper{
+					width: 90px;
+					height: 90px;
+					background: #fff;
+					text-align: center;
+					overflow: hidden;
+				}
+				span{
+					display: block;
+					width: 90px;
+					height: 45px;
+					line-height: 45px;
+					background: #fafafa;
+					color: #b3b3b3;
+					text-align: center;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+/* common sites */
+#commSites{
+	$listH: 38px;
+	margin-top: 25px;
+	ul{
+		position: relative;
+		padding: 0 100px;
+		height: $listH;
+		background: transparent;
+		zoom:1;
+
+		&:after{
+			visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;
+		}
+
+		li{
+			height: $listH;
+			float: left;
+
+			a{
+				display: inline-block;
+				height: $listH;
+				line-height: $listH;
+				font-size: 16px;
+				color: #333;
+				width: 145px;
+				&:hover{
+					color: #FF8700;
+				}
+			}
+		}
+		li:last-child a{
+			width: 70px;
+		}
+	}
+	ul.bgc{
+		background: #f2f2f2;
+	}
+
+	/* icon */
+	.code1{
+		display: block;
+		width: 17px;
+		height: 38px;
+		position: absolute;
+		left: 8px;
+		top: 0;
+		background-image: url(../images/c_01.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 80%;
+	}
+	.code2{
+		display: block;
+		width: 36px;
+		height: 38px;
+		position: absolute;
+		right: 8px;
+		top: 0;
+		background-image: url(../images/c_02.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 80%;
+	}
+	.ico-video{
+		display: block;
+		width: 27px;
+		height: 38px;
+		position: absolute;
+		left: 5px;
+		top: 0;
+		background-image: url(../images/video.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 80%;
+	}
+	.feiji{
+		display: block;
+		width: 27px;
+		height: 38px;
+		position: absolute;
+		left: 5px;
+		top: 0;
+		background-image: url(../images/feiji.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 80%;
+	}
+	b.more{
+		display: block;
+		width: 27px;
+		height: 38px;
+		position: absolute;
+		left: 5px;
+		top: 0;
+		background-image: url(../images/more.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 80%;
+	}
+}
+
+
+/* footer */
+footer{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 58px;
+	line-height: 58px;
+	background: #2B3141;
+
+	p{
+		color: #ccc;
+		text-align: center;
+	}
+}
+
+
+/* baidu search */
+.bdSug_wpr {
+  border: 1px solid #ccc !important; }
+
+.bdSug_wpr td {
+  height: 26px !important;
+  padding-left: 5px !important;
+  font-size: 15px !important;
+  cursor: pointer;
+  &:hover{
+  	color: #333;
+  	background: #E9F0F5;
+  }
+}
+
+.bdSug_app {
+  display: none !important; }
+
+
+/* other */
+body ::selection {
+  color: #fff;
+  background-color: #8DB3B4;
+  text-shadow: none;
+}
+#commSites ul:nth-child(1) ::selection,
+#commSites ul:nth-child(2) ::selection{
+	color: #fff;
+	background-color: #54C8D5;
+	text-shadow: none;
+}
+#commSites ul:nth-child(3) ::selection,
+#commSites ul:nth-child(4) ::selection{
+	color: #fff;
+	background-color: #FFC3A5;
+	text-shadow: none;
+}
+#commSites ul:nth-child(5) ::selection,
+#commSites ul:nth-child(6) ::selection{
+	color: #fff;
+	background-color: #FEE4B8;
+	text-shadow: none;
+}
+#commSites ul:nth-child(7) ::selection,
+#commSites ul:nth-child(8) ::selection{
+	color: #fff;
+	background-color: #3D3D3D;
+	text-shadow: none;
+}
+
+
+@-webkit-keyframes fadeOutUp {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0)
+    }
+}
+
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0)
+    }
+}
+
+.fadeOutUp {
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
