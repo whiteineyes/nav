@@ -252,7 +252,7 @@ header {
 footer {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 0px;
   height: 58px;
   line-height: 58px;
   background: #2B3141; }
