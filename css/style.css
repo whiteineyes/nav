@@ -48,8 +48,9 @@ ins, a {
 body {
   padding-bottom: 58px;
   background: #fff;
-  min-width: 1000px; }
-
+  mwidth: 100%;   
+  height: 100%;  }
+  
 .wrapper {
   width: 1000px;
   height: 100%;
