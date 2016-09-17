@@ -40,7 +40,7 @@ ins, a {
 .clearfix {
   zoom: 1; }
 
-/* 缁撴潫reset鏍峰紡 */
+/*  */
 /* common */
 body {
   padding-bottom: 58px;
@@ -192,6 +192,28 @@ header {
       width: 70px; }
   #commSites ul.bgc {
     background: #f2f2f2; }
+  #commSites .gwc {
+    display: block;
+    width: 24px;
+    height: 38px;
+    position: absolute;
+    left: 8px;
+    top: 0;
+    background-image: url(../images/gwc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%; }
+   #commSites .sj{
+    display: block;
+    width: 24px;
+    height: 38px;
+    position: absolute;
+    left: 8px;
+    top: 0;
+    background-image: url(../images/sj.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%; }
   #commSites .code1 {
     display: block;
     width: 17px;
